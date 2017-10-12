@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dialogBackground"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="0.96"
+        android:layout_height="60dp"
+        android:weightSum="1"
+        android:layout_width="450dp">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/createNewEmployee"
+            android:textColor="@color/dialogTextColor"
+            android:textSize="30sp"
+            android:id="@+id/titleCreateDialog"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="64dp"
+            android:layout_height="60dp"
+            android:layout_width="575dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/empIdLayoutCreateDialog">
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/employee_id"
+            android:id="@+id/textEmployeeID"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="64dp"
+            android:layout_height="60dp" />
+
+        <EditText
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:ems="12"
+            android:enabled="true"
+            android:id="@+id/editEmployeeID"
+            android:layout_weight="40.63"
+            android:layout_width="0dp"
+            tools:ignore="LabelFor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/empNameLayoutCreateDialog">
+
+        <TextView
+            android:layout_width="200dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/name"
+            android:id="@+id/textEmployeeName"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="64dp"
+            android:layout_height="60dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:textSize="25dp"
+            android:id="@+id/editEmployeeName"
+            android:layout_gravity="fill_horizontal"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/empPhoneLayoutCreateDialog">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/phone_number"
+            android:gravity="center_vertical"
+            android:id="@+id/textEmployeePhone"
+            android:layout_marginBottom="64dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="10"
+            android:textSize="25dp"
+            android:id="@+id/editEmployeePhone"
+            android:layout_gravity="fill_horizontal"
+            android:layout_weight="1"
+            tools:ignore="LabelFor,TextFields" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09"
+        android:id="@+id/empWageLayoutCreateDialog">
+
+        <TextView
+            android:layout_width="200dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/hourly_wage"
+            android:gravity="center_vertical"
+            android:id="@+id/textEmployeeWage"
+            android:layout_height="60dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:textSize="25dp"
+            android:id="@+id/editEmployeeWage"
+            android:layout_gravity="fill_horizontal"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainBtnLayoutCreateDialog">
+
+        <Button
+            android:text="@string/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialogCancelBtn"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:text="@string/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialogSubmitBtn"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+</LinearLayout>

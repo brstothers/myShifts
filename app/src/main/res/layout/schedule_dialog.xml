@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dialogBackground"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="0.96"
+        android:layout_height="60dp"
+        android:weightSum="1"
+        android:layout_width="450dp">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/createNewSchedule"
+            android:textColor="@color/dialogTextColor"
+            android:textSize="30sp"
+            android:id="@+id/titleScheduleDialog"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="64dp"
+            android:layout_height="60dp"
+            android:layout_width="575dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/schedIDLabel">
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/employee_id"
+            android:id="@+id/textScheduleID"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="64dp"
+            android:layout_height="60dp" />
+
+        <EditText
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:ems="12"
+            android:enabled="true"
+            android:id="@+id/editScheduleID"
+            android:layout_weight="40.63"
+            android:layout_width="0dp"
+            tools:ignore="LabelFor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/scheduleWeekDialogLayout">
+
+        <TextView
+            android:layout_width="200dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/week"
+            android:id="@+id/textScheduleWeek"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="64dp"
+            android:layout_height="60dp" />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/weekDropDown"
+            android:textSize="25sp"
+            android:layout_weight="0.96" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/scheduleMonthLayoutDialog">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/month"
+            android:gravity="center_vertical"
+            android:id="@+id/textScheduleMonth"
+            android:layout_marginBottom="64dp" />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/monthDropDown"
+            android:textSize="25sp"
+            android:layout_weight="0.96" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09"
+        android:id="@+id/scheduleYearLayoutDialog">
+
+        <TextView
+            android:layout_width="200dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/year"
+            android:gravity="center_vertical"
+            android:id="@+id/textScheduleYear"
+            android:layout_height="60dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:id="@+id/editScheduleYear"
+            android:layout_gravity="fill_horizontal"
+            tools:ignore="LabelFor,TextFields" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainBtnLayoutScheduleDialog">
+
+        <Button
+            android:text="@string/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scheduleCancelBtn"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:text="@string/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scheduleSubmitBtn"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+</LinearLayout>
